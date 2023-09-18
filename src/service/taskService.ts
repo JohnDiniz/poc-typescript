@@ -1,5 +1,3 @@
-// src/service/taskService.ts
-
 import { Task } from "../repository/taskRepository";
 
 const tasks: Task[] = [];
