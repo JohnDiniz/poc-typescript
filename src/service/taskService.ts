@@ -1,4 +1,4 @@
-import { Task } from "../repository/taskRepository";
+import { Task } from "types/task.type";
 
 const tasks: Task[] = [];
 

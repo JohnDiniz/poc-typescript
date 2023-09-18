@@ -1,15 +1,10 @@
 import { Pool } from "pg";
 import dotenv from "dotenv";
 
+import { Task } from "types/task.type";
+
 dotenv.config();
 import pool from "../db/db";
-
-export interface Task {
-  id: number;
-  title: string;
-  description: string;
-  completed: boolean;
-}
 
 export const getAllTasks = async (): Promise<Task[]> => {
   const query = "SELECT * FROM tasks";
